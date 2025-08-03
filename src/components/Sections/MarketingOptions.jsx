@@ -42,11 +42,6 @@ const MarketingOptions = ({ config, onChange }) => {
           checked={config.smsEnabled}
           onChange={(value) => handleChange('smsEnabled', value)}
         />
-        {config.smsEnabled && (
-          <div className="alert alert-error" style={{ marginTop: '12px' }}>
-            ⚠️ Para enviar SMS marketing, necesitas instalar una app de SMS
-          </div>
-        )}
       </div>
     </div>
   );
