@@ -59,10 +59,6 @@ const CheckoutConfig = () => {
     });
   };
 
-  const handleEditContent = () => {
-    alert('Funcionalidad de edición de contenido disponible próximamente');
-  };
-
   return (
     <div className="main-content">
       <Header 
@@ -88,9 +84,7 @@ const CheckoutConfig = () => {
       
       <TipsSection />
       
-      <LanguageSection 
-        onEditContent={handleEditContent}
-      />
+      <LanguageSection />
       
       <CustomerAccounts 
         value={config.accountType}
